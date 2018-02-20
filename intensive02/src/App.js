@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ClassComponent from './ClassComponent';
+import Second from './components/02'; // Component with Props from Parent.
+import Third from './components/03';
+import Fourth from './components/04';
+import Fifth from './components/05';
+import Sixth from './components/06';
+import Seventh from './components/07';
+import Eighth from './components/08';
+import Ninth from './components/09';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Step 02: Class Component</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <ClassComponent />
+        <Second blanket={'Blanky'} />
+        <Third />
+        <Fourth />
+        <Fifth />
+        <Sixth />
+        <Seventh />
+        <Eighth />
+        <Ninth />
       </div>
     );
   }
